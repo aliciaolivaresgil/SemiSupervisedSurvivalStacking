@@ -146,10 +146,10 @@ if __name__=="__main__":
             X = X_numeric
 
         models = {
-            #'logistic_regression': (LogisticRegression(max_iter=5000), {"C":np.logspace(-3,3,7)}),
-            #'random_forest': (RandomForestClassifier(), {}), 
-            #'ada_boost': (AdaBoostClassifier(), {}), 
-            #'svm': (SVC(probability=True), {}), 
+            'logistic_regression': (LogisticRegression(max_iter=5000), {"C":np.logspace(-3,3,7)}),
+            'random_forest': (RandomForestClassifier(), {}), 
+            'ada_boost': (AdaBoostClassifier(), {}), 
+            'svm': (SVC(probability=True), {}), 
             'knn': (KNeighborsClassifier(), {})
         }
 

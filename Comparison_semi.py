@@ -141,12 +141,12 @@ if __name__=="__main__":
             X = X_numeric
 
         models = {
-            #'trit_logistic_regression': (TriTraining(base_estimator=LogisticRegression(max_iter=5000)),
-            #         {"base_estimator__C": np.logspace(-3,3,7)}),
-            #'trit_random_forest': (TriTraining(base_estimator=RandomForestClassifier()), {}),
-            #'trit_ada_boost': (TriTraining(base_estimator=AdaBoostClassifier()), {}), 
+            'trit_logistic_regression': (TriTraining(base_estimator=LogisticRegression(max_iter=5000)),
+                     {"base_estimator__C": np.logspace(-3,3,7)}),
+            'trit_random_forest': (TriTraining(base_estimator=RandomForestClassifier()), {}),
+            'trit_ada_boost': (TriTraining(base_estimator=AdaBoostClassifier()), {}), 
             'trit_svm': (TriTraining(base_estimator=SVC(probability=True)), {}), 
-            #'trit_knn': (TriTraining(base_estimator=KNeighborsClassifier()), {})
+            'trit_knn': (TriTraining(base_estimator=KNeighborsClassifier()), {})
         }
 
         for key_model in models: 
